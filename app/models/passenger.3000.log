@@ -1,0 +1,28 @@
+[ N 2018-02-03 17:59:35.4474 6588/T1 age/Wat/WatchdogMain.cpp:1267 ]: Starting Passenger watchdog...
+[ N 2018-02-03 17:59:35.4507 6591/T1 age/Cor/CoreMain.cpp:1165 ]: Starting Passenger core...
+[ N 2018-02-03 17:59:35.4508 6591/T1 age/Cor/CoreMain.cpp:249 ]: Passenger core running in multi-application mode.
+[ N 2018-02-03 17:59:35.4537 6591/T1 age/Cor/CoreMain.cpp:905 ]: Passenger core online, PID 6591
+2018/02/03 17:59:37 [error] 6599#0: *4 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", host: "0.0.0.0"
+[ N 2018-02-03 17:59:38.4064 6591/T7 age/Cor/SecurityUpdateChecker.h:374 ]: Security update check: no update found (next check in 24 hours)
+2018/02/03 17:59:43 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:44 [error] 6599#0: *5 open() "/home/vagrant/campusevents/app/models/public/favicon.ico" failed (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:46 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:47 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:48 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:48 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:49 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:49 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:50 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:50 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:51 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:52 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:52 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+2018/02/03 17:59:52 [error] 6599#0: *5 "/home/vagrant/campusevents/app/models/public/index.html" is not found (2: No such file or directory), client: 10.0.2.2, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:4567"
+
+[ N 2018-02-03 18:00:13.3765 6591/T3 age/Cor/CoreMain.cpp:589 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-02-03 18:00:13.3766 6591/T1 age/Cor/CoreMain.cpp:1080 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-02-03 18:00:13.3766 6591/T8 Ser/Server.h:886 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-02-03 18:00:13.3766 6591/T8 Ser/Server.h:531 ]: [ApiServer] Shutdown finished
+[ N 2018-02-03 18:00:13.3767 6591/T3 Ser/Server.h:886 ]: [ServerThr.1] Freed 128 spare client objects
+[ N 2018-02-03 18:00:13.3767 6591/T3 Ser/Server.h:531 ]: [ServerThr.1] Shutdown finished
+[ N 2018-02-03 18:00:13.4102 6591/T1 age/Cor/CoreMain.cpp:1150 ]: Passenger core shutdown finished
