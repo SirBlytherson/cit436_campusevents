@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :subscriptions
+  resources :attendees
   resources :locations
   resources :meetings
   resources :sponsors
