@@ -33,7 +33,13 @@
   
   <div class="field">
 	<%= form.label :location_id %>
-	<%= form.select :location_id, Location.all.collect { |l| [l.name, l.id]} %>
+	<%= form.select :location_id, Location.all.collect { |l| [l.name, l.id]}, :include_blank => "Choose a Location" %>
+  </div>
+  
+  <div class="field">
+	<%= form.label :event_id %>
+	<%= form.select :event_id, Event.all.collect { |e| [e.name, e.id]}, :include_blank => "Choose an Event" %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>
