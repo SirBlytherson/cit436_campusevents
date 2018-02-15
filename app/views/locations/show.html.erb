@@ -27,7 +27,7 @@
 
 <p>
   <strong>Meetings:</strong>
-  <%= @location.meetings.all.map(&:name).join(', ') %>
+  <%= @location.meetings.all.order(:start_time).limit(5).map(&:name).join(', ') %>
 </p>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
