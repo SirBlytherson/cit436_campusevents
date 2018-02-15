@@ -27,9 +27,7 @@
 
 <p>
   <strong>Meetings:</strong>
-  <% @location.meetings.all.each do |m| %>
-    <%= m.name %>
-  <% end %>
+  <%= @location.meetings.all.map(&:name).join(',') %>
 </p>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
