@@ -33,7 +33,7 @@
     <th>Location</th>
   </thead>
   <tbody>
-    <% @event.meetings.all.each |m| %>
+    <% @event.meetings.all.each do |m| %>
 	  <tr>
 	    <td><%= m.start_date %></td> 
 	    <td><%= m.end_date %></td> 
