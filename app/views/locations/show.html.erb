@@ -22,7 +22,7 @@
 
 <p>
   <strong>Meetings:</strong>
-  <% @location.meetings.endmost(5).each do |m| %>
+  <% @location.meetings.each do |m| %>
     <%= m.name %>
   <% end %>
 </p>
