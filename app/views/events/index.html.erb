@@ -21,7 +21,7 @@
         <td><%= event.start_date %></td>
         <td><%= event.end_date %></td>
         <td><%= event.url %></td>
-		<td><%= "Sponsors" %></td>
+		<td><%= event.sponsors %></td>
         <td><%= link_to 'Show', event %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
         <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger"  %></td>
