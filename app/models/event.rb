@@ -7,8 +7,8 @@ class Event < ApplicationRecord
     has_many :attendees, :through => :subscriptions
 
   def check_datetime_order
-    if start_date? && end_date? && end_date <= start_date
-      errors.add(:unordered_dates, ": Start Date must be before End Date")
+    if start_time? && end_time? && end_time <= start_time
+      errors.add(:unordered_times, ": Start Date must be before End Date")
     end
   end
 end
