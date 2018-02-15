@@ -30,6 +30,13 @@
     <%= form.label :url %>
     <%= form.text_field :url, id: :event_url %>
   </div>
+  
+  <div class="field">
+    <% Sponsors.all.each do |s| %>
+	  <%= check_box_tag "event[sponsor_ids][]", s.id%>
+	  <%= s.name %>
+	<% end %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>
