@@ -4,7 +4,7 @@ class Event < ApplicationRecord
     has_and_belongs_to_many :sponsors
     has_many :meetings
     has_many :subscriptions
-    has_many :attendees, through :subscriptions
+    has_many :attendees, :through => :subscriptions
 
   def check_datetime_order
     if start_date? && end_date? && end_date <= start_date
