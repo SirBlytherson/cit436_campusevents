@@ -19,6 +19,6 @@ class Meeting < ApplicationRecord
   end
 
   def endmost(n)
-    all.only(:order).from(all.reverse_order.limit(n), location)
+    all.only(:order).from(all.reverse_order.limit(n), :location)
   end
 end
