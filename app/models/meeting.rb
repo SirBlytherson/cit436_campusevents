@@ -5,7 +5,7 @@ class Meeting < ApplicationRecord
     belongs_to :event
 
   def check_datetime_order
-    if start_date? && end_date? && end_date <= start_date
+    if start_time? && end_time? && end_time <= start_time
       errors.add(:unordered_dates, ": Start Date must be before End Date")
     end
   end
