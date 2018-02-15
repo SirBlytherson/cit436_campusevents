@@ -23,8 +23,8 @@
         <td><%= meeting.description %></td>
         <td><%= meeting.start_time %></td>
         <td><%= meeting.end_time %></td>
+        <td><%= meeting.event.name %></td>
         <td><%= meeting.location.name %></td>
-        <td><%= "Event" %></td>
         <td><%= "Sponsors" %></td>
         <td><%= link_to 'Show', meeting %></td>
         <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
