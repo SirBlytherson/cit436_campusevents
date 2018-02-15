@@ -30,6 +30,10 @@
     <%= form.label :end_time %>
     <%= form.datetime_select :end_time, id: :meeting_end_time %>
   </div>
+  
+  <div class="field">
+	<%= form.label :location_id %>
+	<%= form.select :location_id, Location.all.collect { |l| [l.name, l.id]} %>
 
   <div class="actions">
     <%= form.submit %>
