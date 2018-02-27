@@ -22,21 +22,19 @@
 			<a class="nav-link" href="#">Home </a>
 		  </li>
 		  <li class="nav-item">
-			
-			<%= link_to("Events", events_path) :class => "nav-link" %>
-			Events <span class="sr-only">(current)</span></a>
+			<%= link_to("Events", events_path, :class => "nav-link") %>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="attendees/">Attendees </a>
+			<%= link_to("Attendees", attendees_path, :class => "nav-link") %>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="meetings/">Meetings </a>
+			<%= link_to("Meetings", meetings_path, :class => "nav-link") %>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="locations/">Locations </a>
+			<%= link_to("Locations", locations_path, :class => "nav-link") %>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="sponsors/">Sponsors </a>
+			<%= link_to("Sponsors", sponsors_path, :class => "nav-link") %>
 		  </li>
 		</ul>
 	  </div>
