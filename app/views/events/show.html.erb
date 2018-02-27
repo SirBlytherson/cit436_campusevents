@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<% content_for(:title) do %>
+  Events Details
+<% end %>
+
 <p>
   <strong>Name:</strong>
   <%= @event.name %>
