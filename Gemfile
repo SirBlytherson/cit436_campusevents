@@ -15,6 +15,8 @@ gem 'bootstrap', '~> 4.0'
 
 gem 'jquery-rails'
 
+gem 'high_voltage', '~> 3.0.0'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
