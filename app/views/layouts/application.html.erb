@@ -6,6 +6,24 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<script>
+		$(document).ready(function() {
+			var navsObj = $('.nav li');
+			var navs = $.map(navsObj, function(value, index) {
+				return value;
+			});
+			var hrefs = [];
+			navs.forEach(function(nav, index) {
+				var kid = $(nav).children().filter('a');
+				$(nav).removeClass('active');
+				console.log(window.location.href);
+				console.log(kid.attr('href'));
+				if(window.location.href.includes(kid.attr('href'))) {
+					$(nav).addClass('active');
+				}
+			});
+		});
+	</script>
   </head>
 
   <body>
