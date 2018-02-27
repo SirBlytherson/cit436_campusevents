@@ -47,6 +47,7 @@
 			var navs = $.map(navsObj, function(value, index) {
 				return value;
 			});
+			console.log(navs);
 			var hrefs = [];
 			navs.forEach(function(nav, index) {
 				var kid = $(nav).children().filter('a');
