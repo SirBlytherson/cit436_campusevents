@@ -58,7 +58,11 @@
 				
 			});
 			if(found == 0) {
-			  navs[0].addClass('active');
+			  navs.forEach(function(nav, index) {
+			    if(index == 0) {
+				  nav.addClass('active');
+				}
+			  });
 			}
 		});
 	</script>
