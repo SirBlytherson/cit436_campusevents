@@ -55,6 +55,6 @@
 	<% @event.sponsors.each do |s| %>
 		<% url = sponsors_path+"/"+s.id.to_s+"/" %>
 		<% print url %>
-		<%= link_to(s.name, url) %>,
+		<%= link_to(s.name, url)+"<br>" %>,
 	<% end %>
 <% end %>
