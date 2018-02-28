@@ -17,16 +17,6 @@
 
 <% content_for(:sidebar) do %>
 	<h3>Sponsorships</h3>
-	<ul>
-	<% @sponsor.events.each do |s| %>
-		<% print s %>
-		<li>
-		<% url = events_path+"/"+s.id.to_s+"/" %>
-		<% print url %>
-		<%= link_to(s.name, url) %>
-		</li>
-	<% end %>
-	</ul>
 <% end %>
 
 <%= link_to 'Edit', edit_sponsor_path(@sponsor) %> |
