@@ -18,6 +18,7 @@
 <% content_for(:sidebar) do %>
 	<h3>Sponsorships</h3>
 	<ul>
+	<%= @sponsor.events %>
 	<% @sponsor.events.each do |e| %>
 		<li>
 		<% url = events_path+"/"+e.id.to_s+"/" %>
