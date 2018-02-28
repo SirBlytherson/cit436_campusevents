@@ -17,6 +17,7 @@
 
 <% content_for(:sidebar) do %>
 	<h3>Sponsorships</h3>
+	<ul>
 	<% @events.each { |e| %>
 		<% e.sponsors.each { |s| %>
 			<% if @sponsor.name == s.name %>
@@ -27,6 +28,7 @@
 			<% end %>
 		<% } %>
 	<% } %>
+	</ul>
 <% end %>
 
 <%= link_to 'Edit', edit_sponsor_path(@sponsor) %> |
