@@ -17,9 +17,7 @@
 
 <% content_for(:sidebar) do %>
 	<h3>Sponsorships</h3>
-	<% 	events = []
-		Events.map { |e| if e.sponsors.include?(@sponsor.name) do events.push(e) end } %>
-	<% events.each { |e| %>
+	<% Events.each { |e| %>
 		<% print e.name %>
 	<% } %>
 <% end %>
