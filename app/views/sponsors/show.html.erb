@@ -17,7 +17,15 @@
 
 <% content_for(:sidebar) do %>
 	<h3>Sponsorships</h3>
-	<%= @sponsor.events %>
+	<% 	events = []
+		Events.map { |e|
+		if e.sponsors.include?(@sponsor.name) do
+			events.push(e)
+		end
+	} %>
+	<% events.each { |e| %>
+		<% print e.name %>
+	<% } %>
 <% end %>
 
 <%= link_to 'Edit', edit_sponsor_path(@sponsor) %> |
