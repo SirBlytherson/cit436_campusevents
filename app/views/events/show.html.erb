@@ -52,9 +52,10 @@
 <%= link_to 'Back', events_path %>
 
 <% content_for(:sidebar) do %>
+	<h3>Sponsors</h3>
 	<% @event.sponsors.each do |s| %>
 		<% url = sponsors_path+"/"+s.id.to_s+"/" %>
 		<% print url %>
-		<%= link_to(s.name, url)+"<br>" %>,
+		<%= link_to(s.name, url) %>,
 	<% end %>
 <% end %>
