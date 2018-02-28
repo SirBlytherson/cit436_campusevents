@@ -18,14 +18,14 @@
 <% content_for(:sidebar) do %>
 	<h3>Sponsorships</h3>
 	<% @events.each { |e| %>
-	<li>
 		<% e.sponsors.each { |s| %>
 			<% if @sponsor.name == s.name %>
-				<% url = events_path+"/"+e.id.to_s+"/" %>
-				<%= link_to(e.name, url) %>
+				<li>
+					<% url = events_path+"/"+e.id.to_s+"/" %>
+					<%= link_to(e.name, url) %>
+				</li>
 			<% end %>
 		<% } %>
-	</li>
 	<% } %>
 <% end %>
 
