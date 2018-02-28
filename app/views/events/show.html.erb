@@ -52,5 +52,8 @@
 <%= link_to 'Back', events_path %>
 
 <% content_for(:sidebar) do %>
-  <%= @event.sponsors.map{ |o| o.name } %>
+	<% @event.sponsors.each do |s| %>
+		<% url = sponsors_path, "/",s.id,"/" %>
+		<%= link_to(s.name, url) %>,
+	<% end %>
 <% end %>
