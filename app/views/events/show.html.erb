@@ -52,5 +52,5 @@
 <%= link_to 'Back', events_path %>
 
 <% content_for(:sidebar) do %>
-  <% @event.sponsors.map{ |s| print "<a href=\"".join(s.id).join("\">").join(s.name).join("</a>") } %>
+  <% @event.sponsors.map{ |s| print link_to(s.name, home_path) %>
 <% end %>
