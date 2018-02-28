@@ -20,5 +20,11 @@
   <%= @meeting.end_time %>
 </p>
 
+<% content_for(:sidebar) do %>
+	<h3>Location</h3>
+	<% url = locations_path+"/"+@meeting.location.id.to_s+"/" %>
+	<%= link_to(@meeting.location.name %>
+<% end %>
+
 <%= link_to 'Edit', edit_meeting_path(@meeting) %> |
 <%= link_to 'Back', meetings_path %>
