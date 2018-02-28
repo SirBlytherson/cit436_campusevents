@@ -15,5 +15,17 @@
   <%= @sponsor.logo %>
 </p>
 
+<% content_for(:sidebar) do %>
+	<h3>Sponsorships</h3>
+	<ul>
+	<% @sponsor.events.each do |e| %>
+		<li>
+		<% url = events_path+"/"+e.id.to_s+"/" %>
+		<%= link_to(e.name, url) %> - <%= e.start_date %>
+		</li>
+	<% end %>
+	</ul>
+<% end %>
+
 <%= link_to 'Edit', edit_sponsor_path(@sponsor) %> |
 <%= link_to 'Back', sponsors_path %>
