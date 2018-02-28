@@ -10,6 +10,7 @@ class LocationsController < ApplicationController
   # GET /locations/1
   # GET /locations/1.json
   def show
+    @five = Meeting.limit(5).order("start_time").all
   end
 
   # GET /locations/new
