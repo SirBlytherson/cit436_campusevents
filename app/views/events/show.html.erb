@@ -52,5 +52,5 @@
 <%= link_to 'Back', events_path %>
 
 <% content_for(:sidebar) do %>
-  <%= @event.sponsors.each { |x| print x.name } %>
+  <% @event.sponsors.each { |x| print x.name } %>
 <% end %>
