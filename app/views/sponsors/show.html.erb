@@ -17,7 +17,7 @@
 
 <% content_for(:sidebar) do %>
 	<h3>Sponsorships</h3>
-	<% Events.each { |e| %>
+	<% @events.each { |e| %>
 		<% print e.name %>
 	<% } %>
 <% end %>
