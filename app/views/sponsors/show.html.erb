@@ -19,6 +19,9 @@
 	<h3>Sponsorships</h3>
 	<% @events.each { |e| %>
 		<% print e.name %>
+		<% e.sponsors.each { |s| %>
+			<% print s.name %>
+		<% } %>
 	<% } %>
 <% end %>
 
