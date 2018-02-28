@@ -19,6 +19,7 @@
 	<h3>Sponsorships</h3>
 	<ul>
 	<% @sponsor.events.each do |s| %>
+		<% print s %>
 		<li>
 		<% url = events_path+"/"+s.id.to_s+"/" %>
 		<% print url %>
